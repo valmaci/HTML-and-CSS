@@ -1,0 +1,63 @@
+<!--Course: CS50's Web Programming with Python and Javascript
+    Author: Valeria Macias
+    Assignment: Project0 - Submit Search HTML, CSS
+    Instructor: Brian Yu, David J. Malan
+    Date of Last Modification: 7/27/20
+    Purpose: Learn HTML and CSS by recreating the Google Search, 
+            Image Search and Advanced Search webpages-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="searchStyles.css"/>
+    </head>
+    <body>
+        <table>
+            <div class="advancedSearch">
+                <thead>
+                    <tr>
+                        <th><h1 style="color:rgb(255, 60, 0)">Advanced Search</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Find pages with...</td>
+                </tr>
+                <form action="https://google.com/search">
+                    <tr>
+                        <td><span>all these words:</span></td>
+                        <td><input type="text" name="as_q"></td>
+                    </tr>
+                    <tr>
+                        <td><span>this exact word or phrase:</span></td>
+                        <td><input type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td><span>any of these words:</span></td>
+                        <td><input type="text" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                        <td><span>none of these words:</span></td>
+                        <td><input type="text" name="as_eq"></td>
+                    </tr>
+                    <tr>
+                        <td><span>numbers ranging from:</span></td>
+                        <td><input type="text" name="as_nlo">
+                            to
+                            <input type="text" name="as_nhi"><br></td>
+                    </tr>
+                    <tr style="border-width:20px">
+                        <td></td>
+                        <td style="text-align:right"><input id="button" type="submit" value="Advanced Search"></td>
+                    </tr>
+                </form>
+                </tbody>
+            </div>
+        </table>
+        <div class="links">
+            <a id="FirstLink"; href="search.html">Search</a>
+            <a href="imageSearch.html">Image Search</a>
+        </div>
+    </body>
+</html>
